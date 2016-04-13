@@ -1,4 +1,7 @@
 <template>
+  <require from="child-form"></require>
+
   <h1>Hi there, ${name}!</h1>
-  <input type="text" value.bind="name">
+
+  <child-form user-name.two-way="name"></child-form>
 </template>
